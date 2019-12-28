@@ -1,0 +1,296 @@
+
+
+* {
+ box-sizing: border-box;
+ margin: 0px; 
+ padding: 0px; 
+
+}
+body, html {
+height: 100%;
+font-family: 'Roboto', sans-serif;
+background-color: lightskyblue;
+}
+html{
+font-size: 62.5%;
+}
+.container{
+  overflow: hidden;
+  background-color: lightskyblue;
+  
+}
+h1 {
+font-size: 5rem;
+text-align: center;
+padding: 30px;
+}
+hr {
+color: 2px  lightslategrey;
+}
+
+.content-section {
+ margin: 50px 0;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.text-content {
+ width: 48%;
+ padding-right: 1%;
+}
+.img-content {
+ width: 50%;
+ 
+   }
+img {
+width: 80%;
+border-radius: 10px;
+
+    }
+p {
+  padding: 50px;
+  text-align: justify;
+ line-height: 1.5;
+ font-size: 2rem;
+ padding-bottom: 10px;
+}
+.content-section {
+margin: 30px 0;
+display: flex;
+ flex-wrap: wrap;
+justify-content: space-between;
+}
+.btn {
+ background-color:lightgray;
+ padding: 14px 40px;
+ width: 40%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid slateblue;
+  border-radius: 10px;
+}
+.btn:hover {
+ background-color:slateblue;
+ color: white;
+}
+.button {
+ width: 95%;
+ margin: 30px 100px;
+ 
+ }
+
+ /* Login page */
+ 
+ .userLog {
+ justify-content: space-evenly;
+ padding: 0 10px 0 25px;
+ display: flex;
+ margin-left: 10%;
+}
+.userPass {
+ justify-content: space-evenly;
+ padding: 0 10px 0 25px;
+ margin: 0 0 0 0;
+ 
+}
+
+ .btnLogin {
+ width: 38%;
+ margin-left: 5%;
+ margin: 5 0 10 0;
+}
+ .register {
+  display: flex;
+  justify-content: space-between;
+  padding: 20 20px 0 50px;
+  margin: 0 0 10 100;
+ 
+ }
+.chefReg {
+  width: 40%;
+  margin: 0 0 0 400;
+ padding: 0 20px 0 40px;
+  
+}
+.chefLog {
+    line-height: 1.2;
+    height: 65px;
+    display: block;
+    padding: 0 20px 0 40px;
+}
+
+ .chefPass{
+    line-height: 1.2;
+    display: block;
+    height: 65px;
+    text-align: center;
+    padding: 0 20px 0 40px;
+} 
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 25px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  
+}
+.btnSubmit {
+    margin: 0 0 0 50;
+    padding: 10 20 0 100;
+}
+.font {
+    background-color: lightslategrey;
+    color: darkgray
+}
+
+/* Switch Button */
+
+.switch {
+position: relative;
+display: inline-block;
+width: 90px;
+height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+     border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2ab934;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(55px);
+  }
+  .switchLog {
+  display: inline-block;
+  }
+  h3{
+ font-size: 1.9rem;  
+  }
+  
+
+/* Guest page */
+
+.register1 {
+  display: flex;
+  width: 60%;
+  
+  
+
+}
+.register2 {
+ display: flex;
+ width: 60%;
+ margin-left: 6.5%;
+}
+h2 {
+ font-size: 4rem;
+ margin-left: 18%; 
+
+}
+.frames img {
+ padding: 10px;
+ width: 200px;
+ height: 200px;
+ object-fit: cover;
+}
+  
+.frames {
+ display: flex; 
+justify-content: space-around;
+margin-right: 15%; 
+
+
+
+}
+/* Chef Create page */
+  
+.chefCreate img {
+ padding: 10px;
+ width: 250px;
+ height: 250px;
+ object-fit: cover;
+ border-radius: 50%;
+
+}
+.chefReg1 {
+ width: 28%;
+ margin: 0 0 0 180;
+ padding: 0 20px 0 40px;
+ margin-top: -180px;
+  
+}  
+.chefReg1 h2{
+ margin: 0 0 0 180;
+ margin-top: -180px; 
+ margin-left: 190%;  
+}
+.framesLog img {
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+   
+   
+      }
+ .framesLog1 img {
+ padding: 10px;
+ width: 180px;
+height: 180px;
+ object-fit: cover;
+ 
+ 
+ } /*not woking */
+  .framelog1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    float: left;
+ }
+  .framelog {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ float: left;
+ 
+ }
+
+
+
+  
