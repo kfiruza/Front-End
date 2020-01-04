@@ -22,7 +22,7 @@ font-size: 62.5%;
 h1 {
 font-size: 5rem;
 text-align: center;
-padding: 30px;
+padding: 10px;
 }
 hr {
 color: 2px  lightslategrey;
@@ -46,6 +46,8 @@ img {
 width: 80%;
 border-radius: 10px;
 
+
+
     }
 p {
   padding: 50px;
@@ -62,7 +64,7 @@ justify-content: space-between;
 }
 .btn {
  background-color:lightgray;
- padding: 14px 40px;
+ padding: 14px 14px;
  width: 40%;
   text-align: center;
   text-decoration: none;
@@ -229,15 +231,18 @@ h2 {
  width: 200px;
  height: 200px;
  object-fit: cover;
+ 
+ 
 }
   
 .frames {
  display: flex; 
 justify-content: space-around;
 margin-right: 15%; 
-
-
-
+margin-left: 7%; 
+}
+.recipes{
+ margin-left: 60%;    
 }
 /* Chef Create page */
   
@@ -247,7 +252,6 @@ margin-right: 15%;
  height: 250px;
  object-fit: cover;
  border-radius: 50%;
-
 }
 .chefReg1 {
  width: 28%;
@@ -256,41 +260,183 @@ margin-right: 15%;
  margin-top: -180px;
   
 }  
-.chefReg1 h2{
+.chefReg1 h2 {
  margin: 0 0 0 180;
  margin-top: -180px; 
  margin-left: 190%;  
 }
-.framesLog img {
-    padding: 10px;
-    width: 180px;
-    height: 180px;
+.framelog img {
+    width: 100%;
+    height: 160px;
     object-fit: cover;
-   
-   
-      }
- .framesLog1 img {
+ } 
+
+.framelog {
+ display: inline-block;
  padding: 10px;
  width: 180px;
-height: 180px;
- object-fit: cover;
- 
- 
- } /*not woking */
-  .framelog1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    float: left;
- }
-  .framelog {
+ height: 180px;
+}
+
+ main {
  display: flex;
- flex-wrap: wrap;
- justify-content: space-evenly;
- float: left;
- 
- }
+
+}
+.recipesSection {
+ flex-shrink: 0;
+ width: 400px;
+}
+.chefSection {
+ width: 100%;
+ padding: 0 20px;
+}
+#restoraunts {
+width: 400px; 
+}
+#restType{
+margin-left: 0;
+}
+#build {
+ width: 200px; 
+}
+
+.chefReg1 h3 {
+ font-size: 3rem;
+}
+
+/* UserSign Page */
 
 
+.recipesBlog1 {
+ flex-shrink: 0;
+ width: 400px;
+ margin-left: 8%; 
+   }
+   
+   .recipesBlog2{
+    margin-left: 40%;   
+    width: 700px;
+    margin-top: -360px;    
+   }
+   .favorites {
+    margin-left: 70%;
+    margin-top: -40px;    
+   }
 
+.fa.fa-plus-square.cheff-plus {
+    color: black;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 30px;
+    background-color: white;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Create Recipe Page */
+
+.createRecipe img {
+ padding: 10px;
+ width: 200px;
+ height: 200px;
+ object-fit: cover;
+ margin-left: 6%;  
+}
+#chefName {
+margin-left: 7%;  
+font-size: 2.5rem;
+}
+
+#chefRecipes {
+margin-left: 50%;   
+font-size: 3rem; 
+margin-top: -260px;
+}
+
+/* ViewRecipe Page */
+
+.checked {
+color: slateblue;
+}
+
+ .star{
+ font-size: 3rem;
+ margin-left: 70%;  
+ margin-top: -30px;
+}
+.row {
+    display: flex;
+   background-color: rgb(240, 198, 121);
+   width: 800px;
+   padding: 20px;
+   border: 2px solid darkorange;
+   margin-left: 30%;
+   margin-top: 22px;
+   height: 65%;
+  }
+.no-ml {
+    margin-left: 0;
+}
+.ingredients {
+    width: 40%;
+    padding: 40px;
   
+}
+.ingredients-title, .instructions-title {
+    font-size: 30px;
+}
+.instructions {
+    background-color: white;
+    border: 2px solid gray;
+    width: 60%;
+    padding:40px;
+}
+.ingredients-content, .instructions-content {
+    font-size: 16px;
+    padding: 20px 0;
+}
+ .fa.fa-plus-square.cheif-plus {
+        color: black;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 30px;
+        background-color: white;
+        width: 43px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+}
+  /* CreateRecipe Page */
+
+  .addIngredient {
+    background-color: white;
+    color: lightgrey;
+    font-size: 25px;
+    border: 2px solid lightgrey;
+    padding: 6 14 209 5;
+   
+  }
+
+.addSteps {
+font-size: 25px;
+color: lightgrey;
+background-color: white;
+border: 2px solid lightgrey;
+width: 108%;
+padding: 5 33 285 5;
+
+
+}
+.btnSubmit1{
+margin: 18 -65px -2px -52;
+padding: 8px 7px 285 5;
+ margin-left: 30%;;
+}

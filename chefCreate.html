@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 <link rel="stylesheet" href="css/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://https://fontawesome.com/icons?d=gallery/css/index.css" rel="stylesheet"/>
+<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css"/>
 
 </head>
 
@@ -17,18 +17,29 @@
 </div>
 
 <body>
- <header class="container">
-<nav>
-<h1> Chef Portfolio</h1>
-</nav>   
- </header>
- <hr>
-<section class ="createPage"> 
+
+<header class="container">
+ <nav>
+ <h1>Chef Portfolio</h1>
+ </nav>
+</header>
+<hr>
+
+<main>
+<div class = "chefSection">
+
+ <section class ="createPage"> 
+
 <div class = "chefCreate">
- <img src="images/chef.jpg" alt="chef" class="chef" i class="fas fa-plus-square"></i>
- 
-</div>
- </section>
+  <span style="display:inline-block;position:relative">
+ <img src="images/chef.jpg" alt="chef" class="chef" id="cheif-profile-img"> 
+ <label>
+   <input onChange="changeImage(event)" type="file" accept="image/*" style="display: none;"/>
+   <i class="fa fa-plus-square cheif-plus"></i>
+  </label>
+ </span>
+ </div>
+</section>
 
  <section class ="chefReg1">
  <div class = "chefLog">
@@ -36,38 +47,62 @@
  </div>
         
  <div class = "chefPass">
- <input type="text" id="password" name="password" placeholder="Location">
+ <input type="text" id="Location" name="Location" placeholder="Location">
  </div>
+</section>
 
- <h2>Recipes</h2>
- </section>
+<hr style = "margin-top: 120px; margin-bottom: 50px;" >
 
- <section class="framesLog"> 
+<section>
+  <h2 id = "restType">Restaurants</h2><input type="text" id="restoraunts" name="restoraunts" placeholder="Restoraunts Links">
+</section>
+
+<a href="createRecipe.html" id = "build" class="btn">Build</a>
+
+</div>
+
+ <div class = "recipesSection">
+  <h2 style="position:relative;margin-right:35px;text-align:center">Recipes
+    <a href="chefHome.html"><i class="fa fa-plus-square cheif-plus" style="top:3px;right:15px"></i></a>
+    </h2> 
+
  <div class ="framelog">
- <img src="images/chef.jpg" alt="chef" > 
+ <img src="images/manti.jpg" alt="chef" > 
  </div>
 
  <div class = "framelog">
-<img src="images/chef.jpg" alt="chef" >
+<img src="images/pasta.jpg" alt="chef" >
  </div>
                    
  <div class ="framelog">
- <img src="images/chef.jpg" alt="chef" > 
+ <img src="images/seafood.jpg" alt="chef" > 
 </div>
-</section> 
-<section class="framesLog1">            
-<div class = "framelog1">
- <img src="images/chef.jpg" alt="chef" >
+
+
+         
+<div class = "framelog">
+ <img src="images/ravioli.jpg" alt="chef" >
   </div>
                           
- <div class ="framelog1">
- <img src="images/chef.jpg" alt="chef" > 
+ <div class ="framelog">
+ <img src="images/shrpm.jpg" alt="chef" > 
 </div>
-<div class ="framelog1">
- <img src="images/chef.jpg" alt="chef" > 
+<div class ="framelog">
+ <img src="images/recipes.jpg" alt="chef" > 
 </div>
-</section>                      
 
+</div>  
+</main>                   
 
+<script>
+var profileImg = document.getElementById('cheif-profile-img');
+function changeImage(event) {
+  var reader = new FileReader();
+  reader.onload = function() {
+    profileImg.src = reader.result;
+  }
+  reader.readAsDataURL(event.target.files[0]);
+}
+</script>
   
 </body>

@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfiruza/Front-End.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kfiruza/Front-End/issues"
+  },
+  "homepage": "https://github.com/kfiruza/Front-End#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0"
+  }
+}
